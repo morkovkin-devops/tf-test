@@ -40,3 +40,12 @@ resource "aws_instance" "tc_instance" {
     Name = "TC-triggered-instance"
   }
 }
+
+resource "aws_instance" "tc_instance" {
+  ami           = "ami-0c7c4e3c6b4941f0f"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "TC-triggered-instance"
+  }
+}
